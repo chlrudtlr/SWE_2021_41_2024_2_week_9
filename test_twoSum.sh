@@ -29,10 +29,10 @@ for ((i=0; i<num_cases; i++)); do
     output=$(python3 -c "from main import twoSum; print(twoSum($nums, $target))")
     
     if [ "$output" == "$answer" ]; then
-        echo "Test case $((i+1)): Passed / Expected: $answer, Got: $output"
+        echo "Test case $((i+1)): Passed / Answer: $answer, Got: $output"
         ((pass_count++))
     else
-        echo "Test case $((i+1)): Failed / Expected: $answer, Got: $output"
+        echo "Test case $((i+1)): Failed / Answer: $answer, Got: $output"
     fi
 done
 
